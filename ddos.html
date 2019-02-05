@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head lang='en'>
+    <meta charset='utf-8'>
+    <title>Twitter Shadowban Test - MAINTENANCE</title>
+    <meta description="Determine wether a Twitter user is shadow banned">
+    <meta name="keywords" content="Twitter, Shadowban, Shadowbanned, Ban, Block, Quality Filter, QFD">
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1'>
+    <meta property="og:title" content="Twitter Shadowban Test">
+    <meta property="og:description" content="Are you shadowbanned on Twitter?">
+    <meta property="og:image" content="https://www.shadowban.eu/sm_preview.png">
+    <meta property="og:url" content="https://www.shadowban.eu/">
+    <meta property="og:site_name" content="Twitter Shadowban Test">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="shadwoban.eu">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <base target="_blank">
+
+    <!--Import Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <style type="text/css">
+      body {
+        font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 500;
+        color: #333;
+        background-color: rgb(230, 236, 240);
+      }
+      .fixed-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0.5em;
+        background-color: rgb(60, 60, 60);
+        color: rgb(255, 255, 255);
+      }
+      .fixed-top a {
+        color: inherit;
+        text-decoration: underline dotted rgb(255, 255, 255);
+      }
+      .fixed-top a:hover {
+        text-decoration-style: solid;
+      }
+      .fixed-top img {
+        width: 16px;
+        height: 16px;
+        margin-right: 2px;
+      }
+      .btn {
+        color: rgb(20, 129, 195);
+        border: 1px solid rgb(20, 129, 195);
+        border-radius: 100px;
+        box-shadow: none;
+        &:hover {
+          color: rgb(175, 52, 175);
+        }
+      }
+      .header {
+        margin-top: 6em;
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        color: rgb(20, 129, 195);
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      }
+      .twpurple {
+        color: rgb(175, 52, 175);
+      }
+      footer {
+        font-size: .875em;
+        margin-top: 6em;
+        color: rgb(90, 90, 90);
+      }
+      footer a {
+        color: rgb(20, 129, 195);
+        text-decoration: none;
+      }
+      footer p {
+        margin-bottom: 0.25em;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="row header">
+      <div class="col s12">
+        <h2>Shadowban.eu <span class="twpurple">is under attack</span>.</h2>
+      </div>
+    </section>
+    <section class="row">
+      <div class="col s12 offset-m2 m8">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12">
+                This morning, both our sites (shadowban.eu and cloaker.eu) stopped responding.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col offset-s1 s11">
+                <span class="twpurple">Turns out, we've been the target of a DoS attack.</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                We have identified the responsible leak and will implement a fix, as soon as we get off work.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col offset-s1 s11">
+                <span class="twpurple">Both sites will be unavailble until tonight (UTC+1).</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row center">
+      <button data-target="donate-modal" class="btn modal-trigger waves-effect waves white">Support Us</button>
+    </section>
+    <footer class="section">
+      <div class="row">
+        <div class="col offset-s2 s8 center-align">
+          Source code is <a href="https://github.com/rbeer/TwitterShadowBanV2" target="_blank">public on Github</a>
+          <br />
+          No cookies, no tracking, screw NetzDG and GDPR!
+          <br />
+          <a href="https://twitter.com/Netzdenunziant" target="_blank">@Netzdenunziant</a> (research), <a href="https://twitter.com/raphaelbeerlin" target="_blank">@raphaelbeerlin</a> (implementation)
+        </div>
+      </div>
+    </footer>
+
+    <div class="fixed-top">
+      See blocked tweets and never click "Show More" again, with our browser extension
+      <img src="./twn-logo.png" />TwitterNinja!<br />
+      Available for
+      <a href="https://chrome.google.com/webstore/detail/twitterninja/midjjofmjklgifeblfleiniejcpljmjd">
+        Google Chrome
+      </a>
+      and
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/twitterninja/">
+        Mozilla Firefox
+      </a>
+    </div>
+
+    <div id="donate-modal" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Support Us</h4>
+        <p>Shadowban.eu is an open-source project, created and run in the spirit of Benjamin Franklin's</p>
+        <p>
+          <i>“Knowledge is in every country the surest basis of public happiness.”</i>
+        </p>
+        <p>
+          We hope to have brought you some clarity about what is going on with your Twitter account.
+          If you feel like supporting us, you can do so by donating to our PayPal.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://www.paypal.me/shadowban" class="waves-effect waves white btn">Donate via PayPal</a>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      M.Modal.init(document.getElementById('donate-modal'));
+    </script>
+  </body>
+</html>
